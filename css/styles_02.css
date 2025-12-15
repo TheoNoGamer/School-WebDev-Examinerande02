@@ -338,7 +338,6 @@ a:hover {
   align-items: center;
   justify-content: center;
 
-  border: solid black;
 }
 
 .teknik_osi_layers_a {
@@ -351,6 +350,7 @@ a:hover {
   width: 100%;
   border-radius: 20px;
   background-color: var(--color-section-bg);
+  border: solid black;
 }
 .teknik_osi_layers_a:hover{
   transform: scale(1.01);
