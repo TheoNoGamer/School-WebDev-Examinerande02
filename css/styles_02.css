@@ -340,6 +340,17 @@ a:hover {
   background-color: var(--color-section-bg);
 }
 
+.teknik_osi_layers_a {
+  color: var(--header-text);
+  font-size: 155%;
+  margin: 2%;
+  text-decoration: none;
+}
+
+.teknik_osi_layers_a:hover{
+  transform: scale(1.01);
+}
+
 .teknik_osi_layers_info {
   width: 80%;
   display: flex;
