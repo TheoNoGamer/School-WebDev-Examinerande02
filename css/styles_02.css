@@ -336,6 +336,7 @@ a:hover {
   align-items: center;
   justify-content: center;
 
+  border: solid black;
   background-color: var(--color-section-bg);
 }
 
@@ -346,6 +347,7 @@ a:hover {
   align-items: center;
   justify-content: center;
 
+  border: solid black;
   background-color: var(--color-section-bg);
 }
 
