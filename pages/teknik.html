@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/styles_02.css" />
+    <title>Teknik | The Web Mission</title>
+  </head>
+  <body>
+    <div class="header">
+      <!-- Header -->
+      <div class="header_navLogo">
+        <a class="header_navLogo_a" href="../index.html"
+          ><img class="header_navLogo_img" src="../pictures/logo_no_bg.png" alt="Logotyp"
+        /></a>
+      </div>
+      <div class="header_navBar">
+        <a class="header_navBar_a" href="../index.html">Hem</a>
+        <a class="header_navBar_a" href="pictures.html">Bilder</a>
+        <a class="header_navBar_a" href="video.html">Videor</a>
+        <a class="header_navBar_a" href="about.html">Om mig</a>
+        <a class="header_navBar_a" href="contact.html">Kontakt</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- Huvudinnehåll -->
+      <h2>OSI-modellen</h2>
+        
+      <article>
+          <h3>1. Vad är OSI-modellen och vad speglar den?</h3>
+          <p>OSI-modellen (Open Systems Interconnection) är en konceptuell modell som beskriver hur data överförs mellan datorer i ett nätverk. Den består av sju lager som vart och ett har specifika funktioner för att säkerställa tillförlitlig datakommunikation. Modellen fungerar som en riktlinje för hur olika nätverksprotokoll ska interagera och fungera tillsammans.</p>
+      </article>
+
+
+
+      <div class="teknik_osi">
+        <div class="teknik_osi_layers">
+          <a href="#overview">Översikt</a>
+          <a href="#layer1">Fysiskt lagret</a>
+          <a href="#layer2">Datalänklagret</a>
+          <a href="#layer3">Nätverkslagret</a>
+          <a href="#layer4">Transportlagret</a>
+          <a href="#layer5">Sessionslagret</a>
+          <a href="#layer6">Presentationslagret</a>
+          <a href="#layer7">Applikationslagret</a>
+        </div>
+        <div class="teknik_osi_layers_info">
+          <div id="overview" class="teknik_osi_layers_info_info">
+            <h3>Översikt</h3>
+            <p>OSI-modellen (Open Systems Interconnection) är en konceptuell modell som beskriver hur data överförs mellan datorer i ett nätverk. Den består av sju lager som vart och ett har specifika funktioner för att säkerställa tillförlitlig datakommunikation. Modellen fungerar som en riktlinje för hur olika nätverksprotokoll ska interagera och fungera tillsammans.</p>
+          </div>
+          <div id="layer1" class="teknik_osi_layers_info_info">
+            <h3>Fysiskt lagret</h3>
+            <p>Fysiskt lagret (Physical Layer) är det första lagret i OSI-modellen och ansvarar för den fysiska överföringen av data via nätverkskablar, trådlösa signaler etc.</p>
+          </div>
+          <div id="layer2" class="teknik_osi_layers_info_info">
+            <h3>Datalänklagret</h3>
+            <p>Datalänklagret (Data Link Layer) ansvarar för felhantering och flödeskontroll mellan två direkt anslutna enheter.</p>
+          </div>
+          <div id="layer3" class="teknik_osi_layers_info_info">
+            <h3>Nätverkslagret</h3>
+            <p>Nätverkslagret (Network Layer) ansvarar för adressering, routning och fragmentering av datapaket.</p>
+          </div>
+          <div id="layer4" class="teknik_osi_layers_info_info">
+            <h3>Transportlagret</h3>
+            <p>Transportlagret (Transport Layer) ansvarar för att data levereras korrekt och i rätt ordning.</p>
+          </div>
+          <div id="layer5" class="teknik_osi_layers_info_info">
+            <h3>Sessionslagret</h3>
+            <p>Sessionslagret (Session Layer) ansvarar för upprättande, underhåll och avslutande av sessioner mellan applikationer.</p>
+          </div>
+          <div id="layer6" class="teknik_osi_layers_info_info">
+            <h3>Presentationslagret</h3>
+            <p>Presentationslagret (Presentation Layer) ansvarar för datatolkning, kryptering och komprimering.</p>
+          </div>
+          <div id="layer7" class="teknik_osi_layers_info_info">
+            <h3>Applikationslagret</h3>
+            <p>Applikationslagret (Application Layer) är det översta lagret i OSI-modellen och ansvarar för gränssnittet mellan användaren och nätverkstjänster.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <article>
+          <h3>2. De sju skikten i OSI-modellen</h3>
+          <ol>
+            <li><strong>Fysiska lagret (Physical)</strong>: Hanterar den fysiska överföringen av data via nätverkskablar, trådlösa signaler etc.</li>
+            <li><strong>Datalänklagret (Data Link)</strong>: Hanterar felhantering och flödeskontroll mellan två direkt anslutna enheter.</li>
+            <li><strong>Nätverkslagret (Network)</strong>: Ansvarar för adressering, routning och fragmentering av datapaket.</li>
+            <li><strong>Transportlagret (Transport)</strong>: Säkerställer att data levereras korrekt och i rätt ordning.</li>
+            <li><strong>Sessionslagret (Session)</strong>: Hanterar upprättande, underhåll och avslutande av sessioner mellan applikationer.</li>
+            <li><strong>Presentationslagret (Presentation)</strong>: Ansvarar för datatolkning, kryptering och komprimering.</li>
+            <li><strong>Applikationslagret (Application)</strong>: Gränssnittet mellan användaren och nätverkstjänster.</li>
+          </ol>
+      </article>
+
+      <article>
+          <h3>3. Scenariobaserad fråga: Kommunikation mellan dator och webbplats</h3>
+          <p>När en användare skriver in en webbadress i sin webbläsare:</p>
+          <ol>
+            <li><strong>Applikationslagret</strong>: Webbläsaren tolkar URL:en och skapar en HTTP-förfrågan.</li>
+            <li><strong>Presentationslagret</strong>: Data krypteras om det är en säker anslutning (HTTPS).</li>
+            <li><strong>Sessionslagret</strong>: Upprättar en session mellan klienten och servern.</li>
+            <li><strong>Transportlagret</strong>: Delar upp datan i segment och lägger till portnummer (t.ex. 80 för HTTP).</li>
+            <li><strong>Nätverkslagret</strong>: Lägger till IP-adresser för källa och mål.</li>
+            <li><strong>Datalänklagret</strong>: Lägger till MAC-adresser och skapar ramar.</li>
+            <li><strong>Fysiska lagret</strong>: Skickar de binära signalerna genom nätverket.</li>
+          </ol>
+      </article>
+
+      <h2>Server-Client modell</h2>
+        
+      <article>
+          <h3>1. Serverns roll</h3>
+          <p>En server är en dator eller ett program som tillhandahåller tjänster eller resurser till klienter i ett nätverk. Servern lyssnar efter inkommande förfrågningar och svarar på dessa. Exempel på servrar inkluderar webbservrar, e-postservrar och filservrar.</p>
+      </article>
+
+      <article>
+          <h3>2. Exempel på serverapplikationer för HTTP</h3>
+          <ul>
+            <li><strong>Apache HTTP Server</strong>: En populär öppen källkod-webbserver som används för att hantera webbtrafik.</li>
+            <li><strong>Nginx</strong>: Känd för sin höga prestanda, används ofta som en omvänd proxy och lastbalanserare.</li>
+            <li><strong>Microsoft IIS</strong>: Microsofts webbserver för Windows-servermiljöer.</li>
+          </ul>
+          <p>Dessa servrar fungerar genom att lyssna på specifika portar (vanligtvis port 80 för HTTP och 443 för HTTPS), ta emot HTTP-förfrågningar och returnera lämpliga svar i form av webbsidor eller data.</p>
+      </article>
+
+      <article>
+          <h3>3. Klient vs Server</h3>
+          <p>En klient är en enhet eller mjukvara som begär tjänster eller resurser från en server. Skillnader inkluderar:</p>
+          <ul>
+            <li><strong>Roll</strong>: Klienter initierar förfrågningar, servrar svarar på förfrågningar.</li>
+            <li><strong>Resurser</strong>: Servrar har vanligtvis mer processorkraft och lagring än klienter.</li>
+            <li><strong>Programvara</strong>: Klienter kör webbläsare eller klientapplikationer, medan servrar kör serverprogramvara.</li>
+          </ul>
+      </article>
+
+      <h2>HTTP vs HTTPS</h2>
+        
+      <article>
+          <h3>1. HTTP-metoder</h3>
+          <ul>
+            <li><strong>GET</strong>: Hämtar data från en specificerad resurs. Används för att begära data från en server.</li>
+            <li><strong>POST</strong>: Skickar data till en server för att skapa/uppdatera en resurs. Används för formulär och filuppladdningar.</li>
+            <li><strong>PUT</strong>: Uppdaterar en befintlig resurs eller skapar en ny om den inte finns. Används för att uppdatera hela resurser.</li>
+          </ul>
+      </article>
+
+      <article>
+          <h3>2. HTTP-statuskoder</h3>
+          <ul>
+            <li><strong>200 OK</strong>: Begäran lyckades.</li>
+            <li><strong>301 Moved Permanently</strong>: Sidan har flyttats permanent till en ny URL.</li>
+            <li><strong>302 Found</strong>: Sidan har tillfälligt flyttats till en annan URL.</li>
+            <li><strong>404 Not Found</strong>: Begärd resurs kunde inte hittas.</li>
+            <li><strong>500 Internal Server Error</strong>: Ett oväntat fel uppstod på servern.</li>
+          </ul>
+      </article>
+
+      <article>
+          <h3>3. SSL/TLS</h3>
+          <p>SSL (Secure Sockets Layer) och dess efterföljare TLS (Transport Layer Security) är kryptografiska protokoll som säkerställer säker kommunikation över ett datornätverk. De använder asymmetrisk kryptering för att upprätta en säker anslutning och symmetrisk kryptering för att skydda dataunderlaget.</p>
+      </article>
+
+      <article>
+          <h3>4. SSL-certifikat</h3>
+          <p>Ett SSL-certifikat är ett digitalt pass som autentiserar en webbplatss identitet och möjliggör krypterad anslutning. Det innehåller webbplatsens namn, den certifikatutfärdande myndigheten, certifikatets giltighetstid och en publik nyckel. Det är avgörande för att skydda känslig information och bygga förtroende hos besökare.</p>
+      </article>
+
+      <article>
+          <h3>5. DDoS-attacker</h3>
+          <p>En DDoS-attack (Distributed Denial of Service) är ett försök att göra en onlinetjänst otillgänglig genom att överbelasta den med trafik från flera källor. Effekter inkluderar:</p>
+          <ul>
+            <li>Försämrad webbplatsprestanda eller totalt avbrott</li>
+            <li>Förlorad försäljning och produktivitet</li>
+            <li>Skadad varumärkesimage</li>
+            <li>Potentiella säkerhetsintrång</li>
+          </ul>
+      </article>
+
+      <h2>DNS (Domain Name System)</h2>
+        
+      <article>
+          <h3>1. Root Level i DNS-hierarkin</h3>
+          <p>Root-nivån är den översta nivån i DNS-hierarkin och representeras av en tom sträng eller en punkt. Den innehåller toppdomänservrar som hanterar alla toppdomäner. Det finns 13 olika root-servrar över hela världen.</p>
+      </article>
+
+      <article>
+          <h3>2. Top Level Domains (TLDs)</h3>
+          <p>TLD:er är den högsta nivån i domännamnshierarkin. Exempel inkluderar:</p>
+          <ul>
+            <li>Generiska TLD:er: .com, .org, .net</li>
+            <li>Landspecifika TLD:er: .se (Sverige), .no (Norge), .dk (Danmark)</li>
+            <li>Sponsrade TLD:er: .gov, .edu, .mil</li>
+          </ul>
+      </article>
+
+      <article>
+          <h3>3. Second Level Domains</h3>
+          <p>Second Level Domains (SLD) är domännamnen som registreras direkt under en toppdomän. Till exempel, i "example.com" är "example" en second level domain. Dessa är viktiga eftersom de utgör den unika identifieraren för en webbplats och är ofta kopplade till ett varumärke eller en organisation.</p>
+      </article>
+
+      <article>
+          <h3>4. Sub-Domains</h3>
+          <p>En subdomän är en underavdelning av en domän som kan peka på olika servrar eller tjänster. Till exempel, i "blog.example.com" är "blog" en subdomän. Subdomäner används för att organisera webbplatser i separata avdelningar eller för att hantera olika tjänster som e-post, mobila versioner eller testmiljöer.</p>
+      </article>
+
+      <article>
+          <h3>5. Host i en URL</h3>
+          <p>En host i en URL är domännamnet eller IP-adressen till servern som är värd för webbplatsen. I URL:en "https://www.example.com:443/path" är "www.example.com" host-delen. Den relaterar till DNS genom att DNS översätter det lättlästa domännamnet till en IP-adress som routrar kan använda för att hitta rätt server på internet.</p>
+      </article>
+    </div>
+
+    <div class="footer">
+      <!-- Footer -->
+      <div class="footBar">
+        <p class="footer_copyright">© Theo Lidec 2025 </p>
+        <div class="footer_links">
+          <a href="privacy.html" class="footer_link">Integritetspolicy</a>
+          <a href="terms.html" class="footer_link">Användarvillkor</a>
+        </div>
+      </div>
+      <!--
+      <div class="footLogo">
+        <img class="footLogo_img" src="../pictures/logo.png" alt="Logotyp" />
+      </div>
+      -->
+    </div>
+  </body>
+</html>

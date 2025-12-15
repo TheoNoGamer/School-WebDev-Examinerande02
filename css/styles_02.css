@@ -1,0 +1,357 @@
+:root {
+  /* ===== Colors ===== */
+  /* Page Background */
+  --color-page-bg: #F1F6F9;
+  --color-section-bg: #cee0e6;
+  --color-container-bg: #F1F6F9;
+  --color-divider: #e9ecef;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+  /* Text Colors */
+  --color-text: #212A3E;
+  --color-text-secondary: #394867;
+  --color-heading: #212529;
+  --color-link: #0d6efd;
+  --color-link-hover: #0a58ca;
+
+  /* ===== Brand & Core UI ===== */
+  --color-primary: #9BA4B5;
+  --color-secondary: #394867;
+  --color-accent: #fd7e14;
+  --color-highlight: #fff3cd;
+  --color-selection: rgba(13, 110, 253, 0.15);
+  --outline-focus: 2px solid var(--color-primary);
+
+  /* ===== Navigation ===== */
+  --header-bg: #2c3e50;
+  --header-text: #F1F6F9;
+  --header-text-hover: #F1F6F9;
+  --logo-color: #F1F6F9;
+  --nav-link: #F1F6F9;
+  --nav-link-hover: #F1F6F9;
+  --dropdown-bg: #F1F6F9;
+  --dropdown-text: #394867;
+
+  /* ===== Buttons ===== */
+  --btn-primary-bg: var(--color-primary);
+  --btn-primary-text: #394867;
+  --btn-primary-hover: #0b5ed7;
+  --btn-primary-active: #0a58ca;
+  
+  --btn-secondary-bg: #6c757d;
+  --btn-secondary-text: #394867;
+  --btn-secondary-hover: #212A3E;
+  --btn-icon-bg: transparent;
+
+  /* ===== Forms ===== */
+  --input-bg: #dce0e3;
+  --input-text: #212A3E;
+  --input-border: #c6cbd0;
+  --checkbox-fill: var(--color-primary);
+  --toggle-on: var(--color-primary);
+  --toggle-off: #e9ecef;
+
+  /* ===== Cards & Components ===== */
+  --card-bg: #d1dee6;
+  --card-border: #afb6bd;
+  --card-header: #d1dee6;
+  --card-footer: #d1dee6;
+  --modal-bg: #d1dee6;
+  --modal-overlay: rgba(0, 0, 0, 0.5);
+  --tooltip-bg: #d1dee6;
+  --tooltip-text: #212A3E;
+  --table-row-bg: #d1dee6;
+  --table-row-hover: #d1dee6;
+  --table-header-bg: #d1dee6;
+
+  /* ===== Media & Interactive ===== */
+  --image-overlay: rgba(0, 0, 0, 0.5);
+  --video-controls: rgba(0, 0, 0, 0.7);
+  --progress-bar: var(--color-primary);
+  --slider-track: #e9ecef;
+  --slider-thumb: var(--color-primary);
+  --badge-bg: #e9ecef;
+  --badge-text: #212529;
+  --chip-bg: #e9ecef;
+  --chip-text: #212529;
+
+    /* ===== Footer ===== */
+  --footer-bg: #212A3E;
+  --footer-text: #F1F6F9;
+  --footer-link: #F1F6F9;
+  --footer-link-hover: #98d2f4;
+  --footer-border: #e9ecef;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.footBar {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_copyright {
+  margin: 0;
+  color: var(--footer-text);
+}
+
+.footer_links {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: auto;
+}
+
+.footer_link {
+  color: var(--footer-link);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.footer_link:hover {
+  color: var(--footer-link-hover);
+  text-decoration: underline;
+}
+
+body {
+  background-color: var(--color-page-bg);
+  margin: 0;
+  padding: 0; 
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+p {
+  color: var(--color-text);
+}
+
+h1 {
+  color: var(--color-heading);
+}
+
+a {
+  color: var(--color-link);
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+
+
+
+
+.header {
+  background-color: var(--header-bg);
+  display: flex;
+  width: 100%;
+}
+
+.header_navLogo {
+  align-items: center;
+  width: 10%;
+}
+
+.header_navLogo_img {
+  background-color: transparent;
+  width: 50%;
+  margin: 2%;
+
+}
+
+/*
+.header_navLogo_a {
+
+} 
+*/
+
+.header_navLogo_a:hover{
+  transform: scale(1.1);
+}
+
+.header_navBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  width: 70%;
+}
+
+.header_navBar_a {
+  color: var(--header-text);
+  font-size: 155%;
+  margin: 2%;
+  text-decoration: none;
+}
+
+.header_navBar_a:hover{
+  transform: scale(1.1);
+  color: var(--header-text-hover);
+}
+
+
+
+
+.content {
+  position: relative;
+  background-color: var(--content-bg);
+  padding: 2%;
+  min-height: 200vh;
+}
+
+.home_cards_info {
+  border-radius: 40px;
+  background-color: var(--color-section-bg);
+  margin-top: 50px;
+  padding: 2%;
+  display: flex;
+  gap: 5%;
+}
+
+.home_cards_info_columns {
+  display: flex;
+  flex-direction: column;
+
+  width: 46.5%;
+}
+
+.home_card {
+  position: sticky;
+  top: 50px;
+  z-index: 100;
+
+
+  border: solid black;
+  border-radius: 40px;
+  padding: 2%;
+  text-decoration: none;
+  
+  width: 100%;
+  height: 40%;
+  min-height: 100px;
+  max-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.home_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.home_card_img_teknik {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.home_info_card {
+  border-radius: 40px;
+  background-color: var(--color-section-bg);
+  margin-top: 50px;
+  padding: 2%;
+  display: flex;
+  min-height: 50px;
+}
+
+.home_info_section_01 {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home_info_section_02 {
+  gap: 2%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.home_info_section_02_img {
+  width: 33%;
+  height: 100%;
+
+  max-height: 100px;
+
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+.laws_cards {
+  display: flex;
+  
+}
+
+.laws_card {
+  border: solid black;
+  border-radius: 40px;
+  padding: 2%;
+  text-decoration: none;
+  margin: 2% 0;
+  
+  width: 48%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.laws_card_spacer {
+  width: 2%;
+}
+
+
+.teknik_osi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.teknik_osi_layers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.teknik_osi_layers_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.teknik_osi_layers_info_info {
+  display: none;
+}
+.teknik_osi_layers_info_info:target {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  
+
