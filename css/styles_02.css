@@ -322,7 +322,7 @@ a:hover {
   width: 2%;
 }
 
-.commons_info_card {
+.laws_info_card {
   border-radius: 40px;
   background-color: var(--color-section-bg);
   margin-top: 50px;
@@ -331,14 +331,14 @@ a:hover {
   min-height: 50px;
 }
 
-.commons_info_section_01 {
+.laws_info_section_01 {
   width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.commons_info_section_02 {
+.laws_info_section_02 {
   gap: 2%;
   width: 40%;
   display: flex;
@@ -346,7 +346,7 @@ a:hover {
   justify-content: end;
 }
 
-.commons_info_section_02_img {
+.laws_info_section_02_img {
   width: 40%;
   height: 100%;
 
