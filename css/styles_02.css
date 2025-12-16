@@ -229,7 +229,7 @@ a:hover {
 
 .home_card {
   position: sticky;
-  top: 50px;
+  top: 100px;
   z-index: 100;
 
 
