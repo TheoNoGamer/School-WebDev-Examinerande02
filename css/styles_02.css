@@ -356,6 +356,22 @@ a:hover {
   border-radius: 10px;
 }
 
+.dns {
+  display: flex;
+  flex-direction: column;
+}
+
+.dns_columns {
+  display: flex;
+  flex-direction: row;
+}
+
+.dns_column {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
 
 .teknik_osi {
   display: flex;
