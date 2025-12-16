@@ -329,9 +329,6 @@ a:hover {
   justify-content: center;
 
   gap: 2%;
-
-  background-color: var(--color-divider);
-  border-radius: 40px;
 }
 
 .teknik_osi_layers {
