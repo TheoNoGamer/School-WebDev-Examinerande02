@@ -362,6 +362,8 @@ a:hover {
 
   padding: 0;
   margin: 0;
+
+  outline: solid black;
 }
 
 .dns_columns {
@@ -370,6 +372,8 @@ a:hover {
 
   padding: 0;
   margin: 0;
+
+  outline: solid black;
 }
 
 .dns_column {
