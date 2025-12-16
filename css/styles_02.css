@@ -369,7 +369,7 @@ a:hover {
 .dns_column {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 20%;
 
   border: solid black;
   border-radius: 40px;
