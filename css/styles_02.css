@@ -370,6 +370,10 @@ a:hover {
   display: flex;
   flex-direction: column;
   width: 25%;
+
+  border: solid black;
+  border-radius: 40px;
+  background-color: var(--color-section-bg);
 }
 
 
