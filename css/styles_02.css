@@ -303,7 +303,7 @@ a:hover {
 }
 
 .laws_card {
-  border: solid black;
+  border: solid black 1px;
   background-color: var(--color-section-bg);
   border-radius: 40px;
   padding: 2%;
