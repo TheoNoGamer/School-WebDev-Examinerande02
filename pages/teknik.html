@@ -38,52 +38,115 @@
         </div>
         <div class="teknik_osi_layers_info">
           <div id="overview" class="teknik_osi_layers_info_info">
-            <h2>Översikt</h2>
-            <p>OSI-modellen (Open Systems Interconnection) är en konceptuell modell som beskriver hur data överförs mellan datorer i ett nätverk. Den består av sju lager som vart och ett har specifika funktioner för att säkerställa tillförlitlig datakommunikation. Modellen fungerar som en riktlinje för hur olika nätverksprotokoll ska interagera och fungera tillsammans.</p>
-            <h2>Exempel</h2>
-            <p>När en användare skriver in en webbadress, är det OSI-modellen som styr hur denna förfrågan behandlas genom alla sju lager, från applikationslagret ner till det fysiska lagret och tillbaka igen.</p>
+            <h2>OSI-modellen: En Översikt</h2>
+            <p>OSI-modellen (Open Systems Interconnection) är en konceptuell ramverk som standardiserar kommunikation mellan olika datorsystem. Den består av sju abstrakta lager, där varje lager har specifika ansvarsområden och tjänster som det tillhandahåller till det högre lagret. Denna lagerindelning möjliggör en modulär utveckling av nätverksprotokoll och underlättar felsökning genom att isolera problem till specifika lager.</p>
+            <h3>Varför är OSI-modellen viktig?</h3>
+            <ul>
+              <li>Standardiserar nätverkskommunikation mellan olika tillverkare</li>
+              <li>Underlättar felsökning genom lagerspecifik analys</li>
+              <li>Möjliggör utveckling av protokoll oberoende av underliggande teknik</li>
+              <li>Skapar en gemensam förståelse bland nätverksspecialister</li>
+            </ul>
+            <h3>Ett praktiskt exempel</h3>
+            <p>När du besöker en webbplats genom att skriva en URL i din webbläsare, färdas din förfrågan nedåt genom OSI-modellens sju lager på din dator, över nätverket, och sedan uppåt igen på målservern. Varje lager lägger till nödvändig information för att säkerställa att dina data når rätt mottagare och att svaret kan tolkas korrekt.</p>
           </div>
+          
           <div id="layer1" class="teknik_osi_layers_info_info">
-            <h2>Fysiskt lagret</h2>
-            <p>Fysiskt lagret (Physical Layer) är det första lagret i OSI-modellen och ansvarar för den fysiska överföringen av data via nätverkskablar, trådlösa signaler etc.</p>
-            <h2>Exempel</h2>
-            <p>Skickar de binära signalerna genom nätverket.</p>
+            <h2>1. Fysiskt lagret (Physical Layer)</h2>
+            <p>Det fysiska lagret är det lägsta lagret och hanterar den fysiska överföringen av råa bitströmmar över ett medium. Detta inkluderar elektriska, mekaniska och funktionella specifikationer för anslutningar.</p>
+            <h3>Huvudansvar:</h3>
+            <ul>
+              <li>Överföring av oformaterade bitströmmar</li>
+              <li>Hantering av fysiska anslutningar (kablar, kontakter)</li>
+              <li>Signalering och modulering</li>
+              <li>Bit-synkronisering</li>
+            </ul>
+            <h3>Exempel på tekniker:</h3>
+            <p>Ethernet-kablar (Cat5e, Cat6), fiberoptik, trådlösa radiovågor (Wi-Fi 802.11), RS-232, USB, Bluetooth. Här omvandlas digital data till elektriska, optiska eller radiovågor för överföring.</p>
           </div>
+          
           <div id="layer2" class="teknik_osi_layers_info_info">
-            <h2>Datalänklagret</h2>
-            <p>Datalänklagret (Data Link Layer) ansvarar för felhantering och flödeskontroll mellan två direkt anslutna enheter.</p>
-            <h2>Exempel</h2>
-            <p>Lägger till MAC-adresser och skapar ramar.</p>
+            <h2>2. Datalänklagret (Data Link Layer)</h2>
+            <p>Datalänklagret ansvarar för tillförlitlig överföring av dataramar mellan direkt anslutna noder i ett nätverk. Det delas ofta upp i två underlager: LLC (Logical Link Control) och MAC (Media Access Control).</p>
+            <h3>Huvudansvar:</h3>
+            <ul>
+              <li>Ramformatering och synkronisering</li>
+              <li>Felidentifiering och felkorrigering</li>
+              <li>Flödeskontroll</li>
+              <li>Medieåtkomstkontroll (MAC)</li>
+            </ul>
+            <h3>Exempel på protokoll och enheter:</h3>
+            <p>Ethernet (IEEE 802.3), Wi-Fi (IEEE 802.11), PPP, Frame Relay, Switchar och nätverkskort (NIC). Varje enhet har en unik MAC-adress som används för att identifiera den på nätverksnivå.</p>
           </div>
+          
           <div id="layer3" class="teknik_osi_layers_info_info">
-            <h2>Nätverkslagret</h2>
-            <p>Nätverkslagret (Network Layer) ansvarar för adressering, routning och fragmentering av datapaket.</p>
-            <h2>Exempel</h2>
-            <p>Lägger till IP-adresser för källa och mål.</p>
+            <h2>3. Nätverkslagret (Network Layer)</h2>
+            <p>Nätverkslagret ansvarar för att bestämma den fysiska vägen som data ska färdas genom nätverket, från källan till målet, oavsett om de är direkt anslutna eller inte.</p>
+            <h3>Huvudansvar:</h3>
+            <ul>
+              <li>Logisk adressering (t.ex. IP-adresser)</li>
+              <li>Routing (vägval) mellan nätverk</li>
+              <li>Fragmentering och återskapande av paket</li>
+              <li>Hantering av trafikflöden</li>
+            </ul>
+            <h3>Exempel på protokoll och enheter:</h3>
+            <p>IP (Internet Protocol), ICMP, OSPF, BGP, Router. När du skickar data till en annan nätverksenhet används IP-adresser för att hitta rätt mottagare över flera hopp.</p>
           </div>
+          
           <div id="layer4" class="teknik_osi_layers_info_info">
-            <h2>Transportlagret</h2>
-            <p>Transportlagret (Transport Layer) ansvarar för att data levereras korrekt och i rätt ordning.</p>
-            <h2>Exempel</h2>
-            <p>Delar upp datan i segment och lägger till portnummer (t.ex. 80 för HTTP).</p>
+            <h2>4. Transportlagret (Transport Layer)</h2>
+            <p>Transportlagret säkerställer att data levereras korrekt mellan käll- och målprogram, med lämplig felkontroll, flödeskontroll och flödeskontroll.</p>
+            <h3>Huvudansvar:</h3>
+            <ul>
+              <li>Segmentering och återmontering av data</li>
+              <li>Felsökning och återsändning vid behov</li>
+              <li>Flödeskontroll för att undvika överbelastning</li>
+              <li>Multiplexering av flera anslutningar</li>
+            </ul>
+            <h3>Exempel på protokoll:</h3>
+            <p>TCP (Transmission Control Protocol) - förfogar över tillförlitlig, anslutningsorienterad kommunikation med felkontroll, och UDP (User Datagram Protocol) - för snabbare, icke-tillförlitlig kommunikation. Portnummer används för att identifiera specifika applikationer (t.ex. 80 för HTTP, 443 för HTTPS).</p>
           </div>
+          
           <div id="layer5" class="teknik_osi_layers_info_info">
-            <h2>Sessionslagret</h2>
-            <p>Sessionslagret (Session Layer) ansvarar för upprättande, underhåll och avslutande av sessioner mellan applikationer.</p>
-            <h2>Exempel</h2>
-            <p>Upprättar en session mellan klienten och servern.</p>
+            <h2>5. Sessionslagret (Session Layer)</h2>
+            <p>Sessionslagret etablerar, hanterar och avslutar sessioner mellan applikationer som kommunicerar med varandra.</p>
+            <h3>Huvudansvar:</h3>
+            <ul>
+              <li>Upprättande och avslutande av sessioner</li>
+              <li>Synkronisering av dataströmmar</li>
+              <li>Dialogkontroll (halvduplex/helt duplex)</li>
+              <li>Återupptagning av sessioner vid avbrott</li>
+            </ul>
+            <h3>Exempel på protokoll och användning:</h3>
+            <p>NetBIOS, RPC (Remote Procedure Call), PPTP. När du loggar in på en webbplats med ditt användarkonto, skapas en session som håller dig inloggad medan du navigerar på webbplatsen.</p>
           </div>
+          
           <div id="layer6" class="teknik_osi_layers_info_info">
-            <h2>Presentationslagret</h2>
-            <p>Presentationslagret (Presentation Layer) ansvarar för datatolkning, kryptering och komprimering.</p>
-            <h2>Exempel</h2>
-            <p>Data krypteras om det är en säker anslutning (HTTPS).</p>
+            <h2>6. Presentationslagret (Presentation Layer)</h2>
+            <p>Presentationslagret ansvarar för att data som skickas från applikationslagret ska kunna förstås av applikationslagret på en annan dator.</p>
+            <h3>Huvudansvar:</h3>
+            <ul>
+              <li>Datatransformering (t.ex. ASCII till EBCDIC)</li>
+              <li>Datakomprimering och dekomprimering</li>
+              <li>Kryptering och dekryptering</li>
+              <li>Serialisering och deserialisering av datastrukturer</li>
+            </ul>
+            <h3>Exempel på funktioner:</h3>
+            <p>SSL/TLS för kryptering, MIME-typer för att specificera filformat, bildkomprimering (JPEG, PNG), teckenkodningskonvertering (UTF-8, ASCII). När du skickar ett lösenord till en webbplats, krypteras det av presentationslagret innan det skickas över nätverket.</p>
           </div>
+          
           <div id="layer7" class="teknik_osi_layers_info_info">
-            <h2>Applikationslagret</h2>
-            <p>Applikationslagret (Application Layer) är det översta lagret i OSI-modellen och ansvarar för gränssnittet mellan användaren och nätverkstjänster.</p>
-            <h2>Exempel</h2>
-            <p>Webbläsaren tolkar URL:en och skapar en HTTP-förfrågan.</p>
+            <h2>7. Applikationslagret (Application Layer)</h2>
+            <p>Applikationslagret är det som användaren interagerar med direkt. Det tillhandahåller nätverkstjänster till användarapplikationer.</p>
+            <h3>Huvudansvar:</h3>
+            <ul>
+              <li>Användargränssnitt för nätverkstjänster</li>
+              <li>Tillgång till nätverkstjänster</li>
+              <li>Hantering av applikationsspecifika funktioner</li>
+              <li>Autentisering och behörighet</li>
+            </ul>
+            <h3>Exempel på protokoll och applikationer:</h3>
+            <p>HTTP/HTTPS för webbtrafik, SMTP/POP3/IMAP för e-post, FTP för filöverföring, DNS för domännamnsöversättning, SSH för fjärråtkomst. När du använder en webbläsare för att besöka en webbplats, använder du HTTP/HTTPS-protokoll som fungerar i applikationslagret.</p>
           </div>
         </div>
       </div>
