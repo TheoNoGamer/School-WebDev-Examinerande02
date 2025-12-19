@@ -1,6 +1,6 @@
 :root {
   /* ===== Colors ===== */
-  
+
   /* Page Background */
   /*--color-page-bg: #00a0fd; /* just for test*/
   --color-page-bg: #F1F6F9; 
@@ -153,6 +153,7 @@ a:hover {
   position: relative;
   background-color: var(--content-bg);
   padding: 2%;
+  padding-top: 0;
 }
 
 .home_cards_info {
