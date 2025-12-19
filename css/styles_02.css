@@ -1,90 +1,29 @@
 :root {
   /* ===== Colors ===== */
+  
   /* Page Background */
   /*--color-page-bg: #00a0fd; /* just for test*/
-
   --color-page-bg: #F1F6F9; 
   --color-section-bg: #cee0e6;
   --color-container-bg: #F1F6F9;
   --color-divider: #e9ecef;
-  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 
   /* Text Colors */
   --color-text: #212A3E;
-  --color-text-secondary: #394867;
   --color-heading: #212529;
   --color-link: #0d6efd;
   --color-link-hover: #0a58ca;
-
-  /* ===== Brand & Core UI ===== */
-  --color-primary: #9BA4B5;
-  --color-secondary: #394867;
-  --color-accent: #fd7e14;
-  --color-highlight: #fff3cd;
-  --color-selection: rgba(13, 110, 253, 0.15);
-  --outline-focus: 2px solid var(--color-primary);
 
   /* ===== Navigation ===== */
   --header-bg: #2c3e50;
   --header-text: #F1F6F9;
   --header-text-hover: #F1F6F9;
-  --logo-color: #F1F6F9;
-  --nav-link: #F1F6F9;
-  --nav-link-hover: #F1F6F9;
-  --dropdown-bg: #F1F6F9;
-  --dropdown-text: #394867;
 
-  /* ===== Buttons ===== */
-  --btn-primary-bg: var(--color-primary);
-  --btn-primary-text: #394867;
-  --btn-primary-hover: #0b5ed7;
-  --btn-primary-active: #0a58ca;
-  
-  --btn-secondary-bg: #6c757d;
-  --btn-secondary-text: #394867;
-  --btn-secondary-hover: #212A3E;
-  --btn-icon-bg: transparent;
-
-  /* ===== Forms ===== */
-  --input-bg: #dce0e3;
-  --input-text: #212A3E;
-  --input-border: #c6cbd0;
-  --checkbox-fill: var(--color-primary);
-  --toggle-on: var(--color-primary);
-  --toggle-off: #e9ecef;
-
-  /* ===== Cards & Components ===== */
-  --card-bg: #d1dee6;
-  --card-border: #afb6bd;
-  --card-header: #d1dee6;
-  --card-footer: #d1dee6;
-  --modal-bg: #d1dee6;
-  --modal-overlay: rgba(0, 0, 0, 0.5);
-  --tooltip-bg: #d1dee6;
-  --tooltip-text: #212A3E;
-  --table-row-bg: #d1dee6;
-  --table-row-hover: #d1dee6;
-  --table-header-bg: #d1dee6;
-
-  /* ===== Media & Interactive ===== */
-  --image-overlay: rgba(0, 0, 0, 0.5);
-  --video-controls: rgba(0, 0, 0, 0.7);
-  --progress-bar: var(--color-primary);
-  --slider-track: #e9ecef;
-  --slider-thumb: var(--color-primary);
-  --badge-bg: #e9ecef;
-  --badge-text: #212529;
-  --chip-bg: #e9ecef;
-  --chip-text: #212529;
-
-    /* ===== Footer ===== */
+  /* ===== Footer ===== */
   --footer-bg: #212A3E;
   --footer-text: #F1F6F9;
   --footer-link: #F1F6F9;
   --footer-link-hover: #98d2f4;
-  --footer-border: #e9ecef;
 }
 
 /* Footer Styles */
